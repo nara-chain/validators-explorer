@@ -18,7 +18,7 @@ pnpm dev
 
 Set a custom RPC in `.env` if needed:
 ```
-VITE_RPC_ENDPOINT=https://testnet.naraso.org/
+VITE_RPC_ENDPOINT=https://mainnet-api.nara.build/
 ```
 
 Build for production:
