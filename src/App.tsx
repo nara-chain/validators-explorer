@@ -172,7 +172,7 @@ function App() {
           </div>
           <div className="stat-card">
             <h3>{t('activatedStake')}</h3>
-            <div className="stat-value">{formatStake(stats.totalStake)} SOL</div>
+            <div className="stat-value">{formatStake(stats.totalStake)} NARA</div>
           </div>
         </div>
         <div className="status-bar" style={{ marginTop: 12 }}>
@@ -216,7 +216,7 @@ function App() {
                 </div>
                 <div className="metric">
                   <div className="metric-label">{t('activatedStake')}</div>
-                  <div className="metric-value">{formatStake(v.activatedStake)} SOL</div>
+                  <div className="metric-value">{formatStake(v.activatedStake)} NARA</div>
                 </div>
               </div>
             </article>
@@ -225,7 +225,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <span>© {new Date().getFullYear()} validators.narasol.org · {t('copyright')}</span>
+        <span>© {new Date().getFullYear()} validators.narachain.org · {t('copyright')}</span>
       </footer>
 
       {showCookies && (

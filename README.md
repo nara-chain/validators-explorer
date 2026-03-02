@@ -1,6 +1,6 @@
-# Nara Solana Validator Explorer
+# Nara Chain Validator Explorer
 
-Responsive web client for browsing Solana validators with multi-language (EN/中文) support. Built with Vite + React + TypeScript and managed by pnpm.
+Responsive web client for browsing Nara Chain validators with multi-language (EN/中文) support. Built with Vite + React + TypeScript and managed by pnpm.
 
 ## Features
 - Real-time validator list from `getVoteAccounts` (active + delinquent)

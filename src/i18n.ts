@@ -5,7 +5,7 @@ i18n.use(initReactI18next).init({
   resources: {
     en: {
       translation: {
-        title: 'Nara Solana Validator Explorer',
+        title: 'Nara Chain Validator Explorer',
         subtitle: 'Monitor validators, commission, and stake health in real time.',
         searchPlaceholder: 'Search by name or vote address',
         statusFilter: 'Status filter',
@@ -38,7 +38,7 @@ i18n.use(initReactI18next).init({
     },
     zh: {
       translation: {
-        title: 'Nara Solana 验证者浏览器',
+        title: 'Nara Chain 验证者浏览器',
         subtitle: '实时监控验证者、佣金与质押健康状况。',
         searchPlaceholder: '按名称或投票地址搜索',
         statusFilter: '状态筛选',
