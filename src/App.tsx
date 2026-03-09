@@ -124,19 +124,14 @@ function App() {
   };
 
   return (
-    <div className="app-shell">
-      <header className="header">
-        <div className="branding">
-          <div className="logo-mark">
-            <img src="/favicon.png" className="logo-img" alt="logo" />
-          </div>
-          <div>
-            <h1>{t('title')}</h1>
-          </div>
-        </div>
-        <div className="controls">
+    <>
+      <nav className="nav">
+        <a className="nav-logo" href="https://nara.build">
+          <img src="/favicon.png" alt="NARA" style={{ width: 20, height: 20 }} />
+          <span>NARA</span>
+        </a>
+        <div className="nav-right">
           <div className="language-toggle">
-            <span>{t('language')}:</span>
             <button
               className={`button ${i18n.language.startsWith('en') ? 'active' : ''}`}
               onClick={() => handleLanguage('en')}
@@ -154,7 +149,12 @@ function App() {
             {loading ? t('loading') : t('refresh')}
           </button>
         </div>
-      </header>
+      </nav>
+
+      <div className="container">
+        <div className="page-label">{t('pageLabel')}</div>
+        <h1 className="page-title">{t('pageTitle')}</h1>
+        <p className="page-sub">{t('subtitle')}</p>
 
       <section className="panel">
         <div className="summary-grid">
@@ -177,12 +177,12 @@ function App() {
         </div>
         <div className="status-bar" style={{ marginTop: 12 }}>
           {loading && <span className="spinner" aria-label="loading" />}
-          {error && <span style={{ color: '#b91c1c' }}>{error}</span>}
+          {error && <span className="error-msg">{error}</span>}
         </div>
       </section>
 
-      <section className="panel" style={{ marginTop: 16 }}>
-        <h2>{t('title')}</h2>
+      <section className="panel">
+        <h2>{t('validatorList')}</h2>
         {loading && <p>{t('loading')}</p>}
         {!loading && filteredValidators.length === 0 && <p>{t('empty')}</p>}
         <div className="validator-list">
@@ -225,7 +225,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        <span>© {new Date().getFullYear()} validators.narachain.org · {t('copyright')}</span>
+        <span>© {new Date().getFullYear()} Nara Network Foundation · {t('copyright')}</span>
       </footer>
 
       {showCookies && (
@@ -244,7 +244,8 @@ function App() {
           </div>
         </div>
       )}
-    </div>
+      </div>
+    </>
   );
 }
 
