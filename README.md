@@ -1,27 +1,58 @@
-# Nara Chain Validator Explorer
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nara-chain/nara-web/main/public/favicon.png" width="48" />
+</p>
 
-Responsive web client for browsing Nara Chain validators with multi-language (EN/中文) support. Built with Vite + React + TypeScript and managed by pnpm.
+<h3 align="center">Nara Validator Explorer</h3>
+<p align="center">
+  Real-time validator dashboard for the Nara network.
+  <br />
+  <a href="https://validators.nara.build">validators.nara.build</a>
+</p>
+
+---
+
+Lightweight web client for monitoring validator status, stake distribution, and network health. Supports English and 中文.
 
 ## Features
-- Real-time validator list from `getVoteAccounts` (active + delinquent)
-- Stats: active/delinquent counts, average commission, total activated stake
-- Search and status filters
-- Custom RPC endpoint input
-- Language switcher (English/中文)
-- Responsive layout for desktop and mobile
 
-## Getting started
+```
+Real-time validator list        Active and delinquent nodes
+Network stats                   Active count · avg commission · total staked
+Search & filters                By name, status, commission
+Custom RPC endpoint             Connect to any Nara cluster
+Multi-language                  English / 中文
+Responsive                      Desktop + mobile
+```
+
+## Quick Start
+
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Set a custom RPC in `.env` if needed:
+Custom RPC via `.env`:
+
 ```
-VITE_RPC_ENDPOINT=https://mainnet-api.nara.build/
+VITE_RPC_ENDPOINT=https://devnet-api.nara.build/
 ```
 
-Build for production:
+Production build:
+
 ```bash
 pnpm build
 ```
+
+## Stack
+
+```
+Vite · React 18 · TypeScript · i18next · pnpm
+```
+
+## License
+
+MIT
+
+## Links
+
+[Explorer](https://explorer.nara.build) · [Website](https://nara.build) · [GitHub](https://github.com/nara-chain) · [X](https://x.com/NaraBuildAI)
